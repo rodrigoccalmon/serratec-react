@@ -6,11 +6,13 @@ import ListagemAlunos from './Aula3/pages/ListagemAlunos'
 import { BrowserRouter, useRoutes, routes } from "react-router-dom";
 import Exemplos from './Aula2/ClienteList';
 import NavBar from './Aula3/Component/NavBar'
+import Cadastro from './Aula3/pages/Cadastro'
 
 const Routes = () => {
   const routes = useRoutes([
     { path: "/", element: <ListagemAlunos />},
-    { path: "/aula2", element: <Exemplos />}
+    { path: "/aula2", element: <Exemplos />},
+    { path: "/cadastro", element: <Cadastro /> }
   ]);
     return routes;
 }
